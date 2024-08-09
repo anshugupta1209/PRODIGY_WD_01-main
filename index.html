@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <div class="defaultnavbar">
+        <div>
+            <span id="logo">LoGo</span>
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="nav" class="navbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavbar()" style="font-size: 30px;">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+    </div>
+    <div class="navbarBtn">
+        <span id="logo">LoGo</span>
+        <span onclick="openNavbar()" style="font-size: 30px; cursor: pointer;">&#9776;</span>
+    </div>
+
+    <div class="container">
+        <section id="home">
+            <h1>Home</h1>
+            <p>At "home" section.</p>
+        </section>
+
+        <section id="about">
+            <h1>About</h1>
+            <p>At "about" section.</p>
+        </section>
+        
+        <section id="product">
+            <h1>Product</h1>
+            <p>At "product" section.</p>
+        </section>
+        
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>At "contact" section.</p>
+        </section>        
+    </div>
+
+    <script>
+        function openNavbar() {
+            document.getElementById("nav").style.width = "250px";
+        }
+        function closeNavbar() {
+            document.getElementById("nav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>
